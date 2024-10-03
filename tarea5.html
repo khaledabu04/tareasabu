@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tareas Abu Alhaija Reyes Khaled Ali</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+<h1>Tareas de Abu Alhaija Reyes Khaled Ali</h1>
+<nav>
+    <Ul>
+        <li><a href="index.html" title="Pagina de inicio">Inicio</a></li>
+        <li><a href="tareas.html" title="Pagina de tareas">Tareas</a></li>
+        <li><a href="info.html" title="Pagina de información del alumno">Datos</a></li>
+    </Ul>
+</nav>
+</header>
+
+<main>
+<h2>Tarea #5</h2>
+<p>Encontrar un número del 1 al 1000</p>
+<pre class="texto">
+    #include &#60;stdio.h&#62; 
+    #include &#60;stdlib.h&#62;
+
+       int main()
+       {
+        int menor = 1, mayor = 1000, mitad;
+        char respuesta;
+    
+        printf("Piensa en un número entre 0 y 1000\n Si lo adivino, me debes una gomita:)\n\n");
+        printf("Responde con 'm' si es menor, 'M' si es mayor, o 'c' si es correcto\n\n");
+    
+        while (menor &#60; mayor) {
+            mitad = (menor + mayor) / 2;
+            printf("Tu numero es: %d?\n", mitad);
+            scanf(" %c", &respuesta);
+    
+            if (respuesta == 'c') {
+                printf("Te lei la mente!:)\n");
+                break;
+            }
+
+            else if (respuesta == 'm') {
+                mayor = mitad - 1;  //
+            }
+
+            else if (respuesta == 'M') {
+                menor = mitad + 1;
+            }
+        }
+    
+        return 0;
+        }
+  
+    
+</pre>
+
+</main>
+
+
+
+
+
+</body>
+</html>

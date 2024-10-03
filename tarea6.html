@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tareas Abu Alhaija Reyes Khaled Ali</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+<h1>Tareas de Abu Alhaija Reyes Khaled Ali</h1>
+<nav>
+    <Ul>
+        <li><a href="index.html" title="Pagina de inicio">Inicio</a></li>
+        <li><a href="tareas.html" title="Pagina de tareas">Tareas</a></li>
+        <li><a href="info.html" title="Pagina de información del alumno">Datos</a></li>
+    </Ul>
+</nav>
+</header>
+
+<main>
+<h2>Tarea #6</h2>
+<p>Matriz 5x5 contador de casillas</p>
+<pre class="texto">
+    #include &#60;stdio.h&#62; 
+    #include &#60;stdlib.h&#62;
+  
+       int main()
+       {
+        int abu[5][5];
+        int i, j, m, n, b;
+        int numero=1;
+        int piezas=32;
+        int variable=0;
+        
+        printf("Inserta numeros al azar del 1 al 20: \n\n");
+        
+        for(i=0;i&#60;=4;i++){
+            for(j=0;j&#60;=4;j++){
+                scanf("%d", &abu[i][j]);
+            }
+        }
+            
+    //IMPRIMIR-------------------------------------------------------------------
+        printf("\n");
+        printf("************************************************************");
+        printf("\n");
+    
+        for(i=0;i&#60;=4;i++){
+            for(j=0;j&#60;=4;j++){
+                printf("[%d]",abu[i][j]);
+                printf("\t");
+            }
+            printf("\n\n");
+        }
+        printf("************************************************************");
+        printf("\n");
+ 
+    //IMPRIMIR--------------------------------------------------------------------
+        
+        printf("El total de cada numero es... \n");
+        
+
+    //IMPRIMIR-------------------------------------------------------------------
+        printf("\n");
+        printf("************************************************************");
+    
+        while(numero&#60;=20){
+            for(i=0;i&#60;=4;i++){
+                for(j=0;j&#60;=4;j++){
+                    if(abu[i][j]==numero){
+                        variable = variable +1;    
+                    }
+                }
+            }
+            
+            printf("Total de &#37;d: %d\n",numero,variable);
+            variable=0;
+            numero++;
+        }
+        printf("************************************************************"); 
+        printf("\n");
+        return 0;
+    }
+</pre>
+
+</main>
+
+
+
+
+
+</body>
+</html>

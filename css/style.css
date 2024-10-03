@@ -1,0 +1,137 @@
+body{ /*cuerpo*/
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url("https://www.ultraimagehub.com/wallpapers/tr:flp-false,gx-0.3,gy-1,q-75,rh-3264,rw-5824,th-1080,tw-1920/1281636666301349898.jpeg");
+    background-color: rgb(230, 211, 247);
+    background-repeat:repeat;
+    background-position: center;
+    background-size: 2500px;
+    color: black;
+    margin: 0;
+    
+} 
+
+
+header{ /*encabezado*/
+    background-color: rgb(187, 88, 207);
+    color: rgb(199, 241, 232);
+    padding: 15px;
+    text-align: center;
+}
+
+header h1 { /*margenes y fuente titulo*/
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul{ /*centrar lista de enlace*/
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+nav ul li{ /*elementos de navegacion*/
+    display: inline-block;
+    margin: 0 20px;
+
+}
+
+nav ul li a{ /*estilo enlaces de navegacion*/
+    color: rgb(194, 245, 241);
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+nav ul li a:hover { /*efecto hover en enlaces para cambiar de color al pasar el mouse*/
+    color: rgb(86, 185, 231);
+}
+
+
+main{ /*contenido principal*/
+    padding: 20px;
+    text-align:center;
+}
+
+main h1{ 
+    color: rgb(0, 0, 0) ;
+    font-size: 1.5em;
+    margin-top: 0;
+    text-align:left;
+}
+
+
+
+main h2{ /*titulo de contenido principal*/
+    color: rgb(233, 195, 139) ;
+    font-size: 3em;
+    margin-top: 0;
+    
+}
+
+main p{ /*tamaño de parrafos*/
+    font-size: 1.5em;
+    color:rgb(0, 0, 0);
+}
+
+main pre{
+    font-size: 1.5em;
+    color:rgb(0, 0, 0);
+    text-align: left;
+}
+
+footer{ /*estilos para pie de pagina*/
+    background-color: rgb(62, 97, 97);
+    color: khaki;
+    text-align: center;
+    padding: 8px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+table{ /*estilos tabla*/
+    width: 100%;
+    margin: 0 auto;
+    border-collapse:collapse ;
+    background-color: rgb(121, 209, 212);
+}
+th, td { /*estilos para celdas*/
+    text-align: left;
+    border-bottom: 1px solid #5771c5;
+    border-left:1px solid #5771c5;
+    padding: 20px;
+}
+th { /*estilos para celdas encabezado*/
+    background-color: brown;
+    color: gold;
+    padding: 20px;
+    font-size: 1.5em;
+    text-align: center;
+    
+}
+
+td { /*estilos para letras tabla*/
+    color: rgb(76, 0, 255);
+    padding: 12px;
+    text-align: center;
+    font-size:1.2em;
+}
+
+
+tr:hover { /*estilos para celdas pasando el mouse*/
+    background-color: rgb(75, 209, 198);
+
+}
+.review-link {/*estilos para celda de link tarea*/
+    padding: 8px 8px;
+    background-color: rgb(241, 170, 99);
+    color: rgb(88, 90, 207);
+    text-decoration:none;
+    border-radius: 5px;
+}
+.review-link:hover{ /*estilos para celda link pasando el mouse*/
+    background-color: rgb(228, 131, 21);
+}
+.product-img { /*estilo para imagen*/
+    width: 700px;
+}
+

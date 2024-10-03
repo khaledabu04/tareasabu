@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tareas Abu Alhaija Reyes Khaled Ali</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+<h1>Tareas de Abu Alhaija Reyes Khaled Ali</h1>
+<nav>
+    <Ul>
+        <li><a href="index.html" title="Pagina de inicio">Inicio</a></li>
+        <li><a href="tareas.html" title="Pagina de tareas">Tareas</a></li>
+        <li><a href="info.html" title="Pagina de información del alumno">Datos</a></li>
+    </Ul>
+</nav>
+</header>
+
+<main>
+<h2>Tarea #4</h2>
+<p>Leer arreglo 3x3 incremento en casilla</p>
+<pre class="texto">
+    #include &#60;stdio.h&#62; 
+    #include &#60;stdlib.h&#62;
+
+        |int main()
+        {
+         int abu[3][3];
+         int i, j, m, n, b;
+         int y=0;
+         int activar;
+    
+         printf("Ingresa numeros: ");
+    
+    
+         for(i=0;i&#60;=2;i++){
+            for(j=0;j&#60;=2;j++){
+                abu[i][j]=0;
+            }
+         }
+    
+         printf("\n");
+         printf("*****************************");
+         printf("\n");
+    
+         for(i=0;i&#60;=2;i++){
+            for(j=0;j&#60;=2;j++){
+                printf("[%d]     ", abu[i][j]);
+            }
+         printf("\n");
+         }
+         printf("\n");
+         printf("*****************************");
+         printf("\n");
+    
+    
+    //IMPRIMIR-------------------------------------------------------------------
+    
+         for(i=0;i&#60;=2;i++){
+            for(j=0;j&#60;=2;j++){
+                printf("Ingresa un numero mayor a %d: ", y);
+                scanf("%d", &b);
+                    if(b>y){
+                        abu[i][j]=b;
+                        y=b;
+                    }
+                    else{
+                        if(b&#60;=y){
+                            activar=1;
+                        }
+    
+         while(activar==1){
+            printf("Ese numero no es mayor a %d, elige otro: ", y);
+            scanf("%d",&b);
+                if(b>y){
+                    abu[i][j]=b;
+                    y=b;
+                    activar=2;
+                }
+    
+         }
+                    }
+    
+         printf("\n");
+         printf("*****************************");
+         printf("\n");
+    
+         for(m=0;m&#60;=2;m++){
+            for(n=0;n&#60;=2;n++){
+                printf("[%d]     ", abu[m][n]);
+            }
+         printf("\n");
+         }
+    
+         printf("\n");
+         printf("*****************************");
+         printf("\n");
+            }
+         printf("\n");
+    
+         }
+    //IMPRIMIR-------------------------------------------------------------------
+    
+         printf("Matriz terminada!");
+    
+         return 0;
+        }
+
+    
+</pre>
+
+</main>
+
+
+
+
+
+</body>
+</html>
